@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+
+{%block body %}
+
+<style>
+    .blue{
+        font-size: 30px;
+    }
+</style>
+
+<div class="container pt-5">
+    <form action="">
+        {%csrf_token%}
+        {{forms }}
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+</div>
+
+
+{%endblock%}
